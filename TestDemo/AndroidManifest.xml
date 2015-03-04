@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>    
+    <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="com.htc.ToolTest"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="18" >
+    </uses-sdk>
+
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" >
+    </uses-permission> 
+    
+  <!-- <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.bharatmatrimony" >
+    </instrumentation>  
+     -->
+   <instrumentation        
+        android:name="com.htc.ToolTest.MyTestRunner"                      
+        android:targetPackage="com.bharatmatrimony" ></instrumentation>   
+       
+  
+
+
+    <application
+        android:allowBackup="True"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:permission="android.permission.WRITE_EXTERNAL_STORAGE" >
+        <uses-library android:name="android.test.runner" >
+            
+        </uses-library>
+    </application>
+</manifest>
